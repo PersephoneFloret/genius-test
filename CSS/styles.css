@@ -1,37 +1,65 @@
+/*variables for color containers - змінні для контейнерів кольорів*/ 
+:root {
+    --color-brand-light: #819B57;
+    --color-primary-light: #FAF4EA; 
+    --color-primary-dark: #31261A;
+    --color-brand-dark: #465929; 
+}
+
+/* Base styles */
+ul {
+    list-style-type: none;
+}
+
+/* Домінантний колір сторінки, входить до базових стилів і задається безпосередньо до боді*/
+body {
+    color: var(--color-primary-dark);
+}
+
+/* Button - styles */
 .button {
-    color: #faf4ea;
-    background-color: #819B57;
-    border: 2px solid #819B57;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+    border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
 }
 
 .button:hover {
-    color: #465929;
+    color: var(--color-brand-dark);
     background-color: transparent;
 }
 
+/* header and footer link styles */
 .hf-link {
-    color: #FAF4EA;
+    color: var(--color-primary-light);
 }
 
 .hf-link:hover {
-    color: #819B57;
+    color: var(--color-brand-light);
 }
 
-ul {
-    list-style-type: none;
-}
 
+
+/* hero-tytel styles */
 .hero-title {
-    color: #FAF4EA;
+    color: var(--color-primary-light);
 }
 
 .hero-title .accent {
-    color: #819B57; /*HEX value*/ 
+    color: var(--color-brand-light); /*HEX value*/ 
 }
 
+/* advantage - list styles */
 .advantages-list {
-    color: #FAF4EA;
-    background-color: #819B57;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-light);
+}
+
+/* section-title styles */
+.section-title {
+    color: var(--color-primary-dark);
+}
+.section-title .accent {
+    color: var(--color-brand-dark);
 }
