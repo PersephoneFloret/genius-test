@@ -1,9 +1,44 @@
+/* Локальні шрифти*/
+@font-face {
+    /* poppins-300*/
+@font-face {
+    font-display: swap; . 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
+  /* poppins-regular 400 */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+  }
+  /* poppins-600 */
+  @font-face {
+    font-display: swap; 
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
+  }
+  /* poppins-900 */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+  }
+}
+}
 /*variables for color containers - змінні для контейнерів кольорів*/ 
 :root {
     --color-brand-light: #819B57;
     --color-primary-light: #FAF4EA; 
     --color-primary-dark: #31261A;
     --color-brand-dark: #465929; 
+    --color-copyright-brown: #A18268;  
 }
 
 /* Base styles */
@@ -11,9 +46,16 @@ ul {
     list-style-type: none;
 }
 
-/* Домінантний колір сторінки, входить до базових стилів і задається безпосередньо до боді*/
+/* Домінантний колір + шрифт сторінки, входить до базових стилів і задається безпосередньо до боді та наслідується нащадками*/
 body {
     color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+address {
+    font-style: normal;
 }
 
 /* Button - styles */
@@ -23,6 +65,7 @@ body {
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -33,6 +76,8 @@ body {
 /* header and footer link styles */
 .hf-link {
     color: var(--color-primary-light);
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .hf-link:hover {
@@ -40,10 +85,13 @@ body {
 }
 
 
-
 /* hero-tytel styles */
 .hero-title {
     color: var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+
 }
 
 .hero-title .accent {
@@ -55,11 +103,59 @@ body {
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
 }
+.advantages-item {
+    font-size: 20px;
+    font-weight: 300;
+}
 
 /* section-title styles */
 .section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
     color: var(--color-primary-dark);
 }
 .section-title .accent {
     color: var(--color-brand-dark);
+}
+/*tradition section*/
+.traditions-text .brand {
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+.traditions-text .brand-uppercase {
+    color: var(--color-brand-light);
+    text-transform: uppercase;
+}
+/* Chefs section*/
+.chef-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+/*Format Section*/
+.format-title {
+font-size: 24px;
+font-weight: 600;
+}
+.format-description {
+    font-size: 14px;
+    font-weight: 300;
+}
+/* contact sectioon*/
+.feedback-form-text {
+    color: var(--color-brand-dark);
+}
+/* Footer */ 
+.address-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.address-link:hover {
+    color: var(--color-brand-light);
+}
+.address-copyright {
+    font-size: 14px;
+    color: var(--color-copyright-brown);
 }
