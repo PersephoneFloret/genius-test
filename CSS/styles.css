@@ -1,37 +1,36 @@
 /* Локальні шрифти*/
 @font-face {
-    /* poppins-300*/
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
+}
+
 @font-face {
-    font-display: swap; . 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
-  /* poppins-regular 400 */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
-  }
-  /* poppins-600 */
-  @font-face {
-    font-display: swap; 
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
-  }
-  /* poppins-900 */
-  @font-face {
-    font-display: swap; 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
-  }
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); 
 }
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
 }
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'); 
+}
+
 /*variables for color containers - змінні для контейнерів кольорів*/ 
 :root {
     --color-brand-light: #819B57;
@@ -56,8 +55,28 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin-top: 0;
+}
 address {
     font-style: normal;
+}
+.section {
+    padding: 48px 0;
+}
+.visually-hidden {
+position:absolute;
+left:-10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
 }
 
 /* Button - styles */
@@ -86,9 +105,13 @@ address {
     color: var(--color-brand-light);
 }
 
-
+/*hero-section*/
+.hero-section {
+    padding: 272px o;
+}
 /* hero-tytel styles */
 .hero-title {
+    margin-bottom: 0;
     color: var(--color-primary-light);
     text-align: center;
     font-size: 128px;
@@ -121,6 +144,9 @@ address {
     color: var(--color-brand-dark);
 }
 /*tradition section*/
+.traditions-section {
+    padding-top: 96px;
+}
 .traditions-text .brand {
     color: var(--color-brand-light);
     font-weight: 600;

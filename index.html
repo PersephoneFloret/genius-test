@@ -23,15 +23,21 @@
         <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
-        <section> 
+        <!--Секція з основним заголовком, або основна секція-->
+        <section class="hero-section"> <!--Назва класу окремо для цілої секції-->
           <h1 class="hero-title"> <span class="accent">Сучасна</span>пекарня</h1> <!-- hero-title - використовується для назви CSS класу, для головного заголовка -->
         </section>
-        <section id="traditions-section">
-           <ul class="advantages-list"> <!-- назва CSS класу для переліку переваг - advantages -->
-            <li class="advantages-item">Великий попит на ринку</li> <!--advantages item - назва класу для пунктів, щоб задати стилі тексту пунктів-->
-            <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвідчена управлінська команда</li>
-           </ul> 
+        <!--Секція списку переваг advantages section-->
+        <section>
+            <h2 class="visually-hidden">Переваги</h2> <!--Будівельний елемент "секція" повинен завжди містити заголвок, але, оскільки на макеті його немає, а блок потрібно було зробити окремою секцією - то заголовок ми приховуємо-->
+            <ul class="advantages-list"> <!-- назва CSS класу для переліку переваг - advantages -->
+                <li class="advantages-item">Великий попит на ринку</li> <!--advantages item - назва класу для пунктів, щоб задати стилі тексту пунктів-->
+                <li class="advantages-item">Доступні за бюджетом формати</li>
+                <li class="advantages-item">Досвідчена управлінська команда</li>
+               </ul> 
+        </section>
+        <!--Секція новий формат традицій-->
+        <section class="traditions-section section" id="traditions-section"> <!--Клас section використовується для всіх секцій, щоб задати значення, котрі у цих секціях одинакові-->
             <h2 class="section-title">Новий формат традицій</h2> <!--section title - назва класу для стилізації заголовків усіх секції, крім, власне, головної(hero-title)-->
             <p class="traditions-text"> <span class="brand-uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще і 
                 зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
@@ -41,7 +47,8 @@
                     та висока якість обслуговування!</p>
                     <img src="./images/backer_man.jpg" alt="Пекар дивиться на батони">
         </section>
-        <section id="chefs-section">
+        <!--Секція шеф-кухарі-->
+        <section class="section" id="chefs-section">
             <h2 class="section-title">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
             <ul>
                 <li>
@@ -63,7 +70,8 @@
               </li>
             </ul>
         </section>
-        <section id="formats-section">
+        <!--Секція формати-->
+        <section class="section" id="formats-section">
             <h2 class="section-title">Формати</h2>
             <ul>
                 <li> 
@@ -101,7 +109,8 @@
                 </li>
             </ul>
         </section>
-        <section id="contact-section">
+        <!--Секція контакти-->
+        <section class="section" id="contact-section">
             <h2 class="section-title">Приєднуйся до мережі пекарень </h2>
             <p class="feedback-form-text">Заповни форму, щоб ми звʼязались з тобою!</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638751904716!2d30.48636259440738!3d50.45667301367767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699806703746!5m2!1suk!2sua" 
